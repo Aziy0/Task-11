@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image</title>
+    <style>
+        #hoverImage {
+            transition: opacity 0.2s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover over the image to conceal it.</h1>
+    
+    <img id="hoverImage" src="peacock.jpg" alt="Sample Image" width="300">
+    
+    <script>
+        const image = document.getElementById('hoverImage');
+
+        image.addEventListener('mouseover', toggleOpacity);
+        image.addEventListener('mouseout', toggleOpacity);
+
+        function toggleOpacity(event) {
+            image.style.opacity = event.type === 'mouseover' ? '0' : '1';
+        }
+    </script>
+</body>
+</html>

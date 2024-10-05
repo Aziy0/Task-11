@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Image with CSS</title>
+    <style>
+        
+        img {
+            transition: opacity 0.3s ease; 
+            height: 30%;
+            width:  30%;
+        }
+
+        img:hover {
+            opacity: 0; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Hover Over the Image to Conceal It</h1>
+    
+    <!-- Image element -->
+    <img src="peacock.jpg" alt="Sample Image">
+
+</body>
+</html>
